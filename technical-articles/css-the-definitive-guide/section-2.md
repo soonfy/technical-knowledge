@@ -8,6 +8,7 @@ graph LR;
 选择器-->属性选择器
 选择器-->使用文档结构
 选择器-->伪类和伪元素
+选择器-->选择器列表
 ```
 
 ## 基本规则
@@ -332,11 +333,16 @@ graph LR;
 
     ```mermaid
     graph TB;
-    html-->head-->title
-    html-->body-->h1
-    body-->p-->em
+    html-->head
+    html-->body
+    head-->title
+    body-->h1
+    body-->p
+    body-->div
+    p-->em
     p-->strong
-    body-->div-->ul-->Ali[li]
+    div-->ul
+    ul-->Ali[li]
     ul-->Bli[li]
     ul-->Cli[li]
     ```
