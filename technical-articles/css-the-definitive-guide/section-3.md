@@ -230,7 +230,7 @@ graph LR;
 
     ```css
     /* 这是导入的外部样式 */
-    .warning {
+    p.warning {
       color: black;
     }
     ```
